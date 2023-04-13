@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Make a Payment</h1>
+    <div class="col-8">
+    <p>Pay $5 to create a post</p>
+    <form action="/acceptPayment" method="POST">
+        <script src="https://checkout.stripe.com/checkout.js" 
+        class="stripe-button" 
+        data-key="{{StripePublishableKey}}" 
+        data-amount="500"
+        data-name="Payment for Sharing Post" 
+        data-description="$5 for each post you share" 
+        data-image="/images/logo.jpg"
+        data-locale="auto">
+        </script>
+    </form>
+    </div>
+</div>

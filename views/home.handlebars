@@ -1,0 +1,20 @@
+<div id="hp" class="container">
+    <h1>Welcome</h1> 
+    <h1 >Social Buzz</h1> <br>
+
+
+    {{#if user}}
+    <p>You are logged in...</p>
+{{else}}
+    <h1>
+        <a href="/auth/google" class="btn-social btn-gplus btn-lg" style="text-decoration: none">
+        <i class="fa fa-google-plus"></i>
+        Signup with Google
+        </a>
+    </h1>  <br>    
+
+    
+    {{/if}}
+
+</div>
+
